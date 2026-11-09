@@ -1,19 +1,18 @@
 # Astro Sumas: Aventura Espacial
 
 Juego web educativo para practicar **sumas y restas** (6 a 8 años).
-HTML, CSS y JavaScript vanilla con módulos ES; gráficos 3D con Three.js (`three@0.160.0` desde jsDelivr mediante import map).
+Sitio 100 % estático: sólo HTML, CSS y JavaScript vanilla (scripts clásicos, sin módulos ni compilación).
+Gráficos 3D con Three.js (`three@0.160.0` desde jsDelivr).
 Ilustraciones en SVG y audio sintetizado con Web Audio API, todo generado en código.
 
 ## Cómo ejecutarlo
 
-Los módulos ES necesitan un servidor (no funciona abriendo `index.html` con doble clic):
+Abre `index.html` con doble clic en el navegador. No hace falta servidor ni instalar nada.
+Sólo se necesita conexión a internet para cargar Three.js y la fuente Fredoka.
 
-```bash
-npx serve .
-```
+También se puede publicar tal cual en cualquier alojamiento estático (GitHub Pages, Netlify…).
 
-o bien `python3 -m http.server 8000`, o la extensión **Live Server** de VS Code. Después abre la URL que indique (p. ej. http://localhost:3000).
-Hace falta conexión a internet para cargar Three.js y la fuente Fredoka.
+Los scripts se cargan en orden desde `index.html` y comparten sus piezas a través de `window.AstroSumas`.
 
 ## Estructura
 
